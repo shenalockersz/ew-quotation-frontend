@@ -1,12 +1,12 @@
 // Simple axios instance with your env-driven base URL
 import axios from 'axios';
 
-const baseURL = `${import.meta.env.VITE_PROTOCOL}://${
-  import.meta.env.VITE_HOST
-}:${import.meta.env.VITE_PORT}${import.meta.env.VITE_PREFIX}`;
+// const baseURL = `${import.meta.env.VITE_PROTOCOL}://${
+//   import.meta.env.VITE_HOST
+// }:${import.meta.env.VITE_PORT}${import.meta.env.VITE_PREFIX}`;
 
 const api = axios.create({
-  baseURL,
+  baseURL: import.meta.env.VITE_API_URL || '/api',
   headers: { 'Content-Type': 'application/json' },
   // withCredentials: true, // <- enable if you need cookies
 });

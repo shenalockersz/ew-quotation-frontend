@@ -26,7 +26,6 @@ import CustomerForm from './components/CreateCustomer';
 import SalesForm from './components/SalesPerson';
 import View from './components/View';
 import LoginForm from './components/Login';
-import Test from './components/test';
 import Items from './components/Items';
 //import Reports from './components/Reports';
 import CustomerReport from './components/CustomerReport';
