@@ -181,7 +181,7 @@ const Quotations = ({ user }) => {
               disabled={loading}
             />
 
-            <button
+            {/* <button
               onClick={exportToExcel}
               className='bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-500 disabled:opacity-60'
               disabled={loading || !filtered.length}
@@ -190,7 +190,7 @@ const Quotations = ({ user }) => {
               }
             >
               <FontAwesomeIcon icon={faFileExcel} /> Export
-            </button>
+            </button> */}
 
             <Link
               to='/quotations/create'
